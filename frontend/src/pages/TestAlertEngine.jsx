@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { toast } from "react-toastify";
 
 import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
@@ -42,8 +43,9 @@ function TestAlertEngine() {
                 response.data
             );
 
-            alert(
-                "✅ FAILED_LOGIN event processed successfully!"
+            toast.success(
+                "⚡ FAILED_LOGIN security event processed successfully!",
+                { position: "top-right", autoClose: 4000, theme: "dark" }
             );
 
         } catch (error) {
@@ -53,8 +55,10 @@ function TestAlertEngine() {
                 error
             );
 
-            alert(
-                "❌ Failed to process FAILED_LOGIN event"
+            const msg = error.response?.data?.message || error.response?.data || error.message || "Failed to process FAILED_LOGIN event";
+            toast.error(
+                `❌ Failed to process FAILED_LOGIN event: ${msg}`,
+                { position: "top-right", autoClose: 5000, theme: "dark" }
             );
 
         } finally {
@@ -101,8 +105,9 @@ function TestAlertEngine() {
                 response.data
             );
 
-            alert(
-                "🚨 IOC security event processed successfully!"
+            toast.success(
+                "🚨 IOC security event processed successfully! Threat and Alert correlation completed.",
+                { position: "top-right", autoClose: 4000, theme: "dark" }
             );
 
         } catch (error) {
@@ -112,8 +117,10 @@ function TestAlertEngine() {
                 error
             );
 
-            alert(
-                "❌ Failed to process IOC security event"
+            const msg = error.response?.data?.message || error.response?.data || error.message || "Failed to process IOC security event";
+            toast.error(
+                `❌ Failed to process IOC security event: ${msg}`,
+                { position: "top-right", autoClose: 5000, theme: "dark" }
             );
 
         } finally {
@@ -426,7 +433,7 @@ function TestAlertEngine() {
                                 text-center
                             "
                         >
-                            SentinelCore Automatic Detection Flow
+                            Cloud Security Automatic Detection Flow
                         </h3>
 
 

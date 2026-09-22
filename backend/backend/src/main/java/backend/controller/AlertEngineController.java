@@ -24,12 +24,18 @@ public class AlertEngineController {
     public ResponseEntity<String> processEvent(
             @RequestBody SecurityEvent event
     ) {
+        try {
+            securityEventProcessingService
+                    .processSecurityEvent(event);
 
-        securityEventProcessingService
-                .processSecurityEvent(event);
-
-        return ResponseEntity.ok(
-                "Security event processed successfully."
-        );
+            return ResponseEntity.ok(
+                    "Security event processed successfully."
+            );
+        } catch (Exception e) {
+            System.err.println("Error processing security event: " + e.getMessage());
+            e.printStackTrace();
+            return ResponseEntity.internalServerError()
+                    .body("Error processing security event: " + e.getMessage());
+        }
     }
 }

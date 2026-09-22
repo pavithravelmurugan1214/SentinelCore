@@ -34,9 +34,9 @@ public class AlertRuleService {
         return userRepository.findByEmail(email).orElse(null);
     }
 
-    // Get all rules
+    // Get all rules (sorted by ID)
     public List<AlertRule> getAllRules() {
-        return alertRuleRepository.findAll();
+        return alertRuleRepository.findAllByOrderByIdAsc();
     }
 
     // Get rule by ID

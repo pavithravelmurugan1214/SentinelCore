@@ -19,7 +19,7 @@ function PhishingSimulator() {
     {
       id: 1,
       sender: "security-alert@amazon-login.com",
-      recipient: "analyst@sentinelcore.local",
+      recipient: "analyst@cloudsecurity.local",
       subject: "Urgent: Security Verification Required",
       body: "Dear Amazon Customer,\n\nWe detected suspicious attempts to sign in to your Amazon account from an unknown IP address. To prevent unauthorized access, your account has been temporarily restricted.\n\nYou must verify your identity immediately by clicking the secure login link below:\n\nhttp://verify-account.net/amazon-login\n\nIf you do not verify your account within 24 hours, it will be permanently deactivated.\n\nRegards,\nAmazon Security Team",
       attachments: [],
@@ -30,9 +30,9 @@ function PhishingSimulator() {
     {
       id: 2,
       sender: "support@github.com",
-      recipient: "analyst@sentinelcore.local",
+      recipient: "analyst@cloudsecurity.local",
       subject: "[GitHub] Security Alert: New login detected",
-      body: "Hi SentinelCore Analyst,\n\nWe noticed a login to your GitHub account from a new location/device.\n\nDevice: Chrome on Windows 11\nLocation: Bangalore, India\nIP: 103.45.191.12\n\nIf this was you, no action is needed. If you do not recognize this login, please change your credentials immediately.\n\nThanks,\nThe GitHub Team",
+      body: "Hi Cloud Security Analyst,\n\nWe noticed a login to your GitHub account from a new location/device.\n\nDevice: Chrome on Windows 11\nLocation: Bangalore, India\nIP: 103.45.191.12\n\nIf this was you, no action is needed. If you do not recognize this login, please change your credentials immediately.\n\nThanks,\nThe GitHub Team",
       attachments: [],
       urls: ["https://github.com/settings/security"],
       isPhishing: false,

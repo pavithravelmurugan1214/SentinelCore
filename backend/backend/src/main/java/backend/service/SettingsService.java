@@ -157,7 +157,10 @@ public class SettingsService {
     // SYSTEM SETTINGS
     // ==========================================
     public SystemSectionSettingsDTO getSystemSettings() {
-        String orgName = getValue("ORGANIZATION_NAME", "SentinelCore");
+        String orgName = getValue("ORGANIZATION_NAME", "Cloud Security");
+        if ("SentinelCore".equalsIgnoreCase(orgName)) {
+            orgName = "Cloud Security";
+        }
         String tz = getValue("TIMEZONE", "Asia/Kolkata");
         return new SystemSectionSettingsDTO(orgName, tz);
     }

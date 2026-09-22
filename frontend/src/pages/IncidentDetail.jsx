@@ -499,7 +499,7 @@ function IncidentDetail() {
                   </div>
 
                   <div className="border-t border-slate-800 pt-4 mt-6 text-[10px] text-slate-600">
-                    SentinelCore orchestration logs system executions independently. Audited operations are irreversible.
+                    Cloud Security orchestration logs system executions independently. Audited operations are irreversible.
                   </div>
                 </GlassCard>
               </div>

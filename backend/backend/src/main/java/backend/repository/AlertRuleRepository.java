@@ -9,6 +9,10 @@ import java.util.List;
 @Repository
 public interface AlertRuleRepository extends JpaRepository<AlertRule, Long> {
 
+    List<AlertRule> findAllByOrderByIdAsc();
+
+    List<AlertRule> findAllByOrderByIdDesc();
+
     List<AlertRule> findByEnabled(Boolean enabled);
 
     List<AlertRule> findBySeverity(String severity);

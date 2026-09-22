@@ -28,7 +28,7 @@ export default function AIChat() {
 
         <div style={{padding:20}}>
 
-            <h2>SentinelCore AI Assistant</h2>
+            <h2>Cloud Security AI Assistant</h2>
 
             <textarea
                 rows="4"

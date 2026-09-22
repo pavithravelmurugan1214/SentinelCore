@@ -79,7 +79,7 @@ function ThreatList() {
 
             link.href = url;
 
-            link.download = "SentinelCore_Threat_Report.pdf";
+            link.download = "Cloud_Security_Threat_Report.pdf";
 
             link.click();
 
@@ -119,7 +119,7 @@ function ThreatList() {
 
             link.href = url;
 
-            link.download = "SentinelCore_Threat_Report.xlsx";
+            link.download = "Cloud_Security_Threat_Report.xlsx";
 
             link.click();
 

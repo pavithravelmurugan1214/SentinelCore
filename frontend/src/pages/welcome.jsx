@@ -16,7 +16,7 @@ function Welcome() {
           />
 
           <h2 className="text-4xl font-bold text-white">
-            Sentinel<span className="text-blue-500">Core</span>
+            Cloud<span className="text-blue-500">Security</span>
           </h2>
 
         </div>
@@ -27,7 +27,7 @@ function Welcome() {
 
         <h1 className="text-7xl font-bold text-white">
 
-          Sentinel<span className="text-blue-500">Core</span>
+          Cloud<span className="text-blue-500">Security</span>
 
         </h1>
 

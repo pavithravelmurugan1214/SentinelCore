@@ -12,7 +12,7 @@ export const API_BASE_URL =
 export const BACKEND_BASE_URL =
     `http://${BACKEND_HOST}:8080`;
 
-console.log("SentinelCore API:", API_BASE_URL);
+console.log("Cloud Security API:", API_BASE_URL);
 
 const api = axios.create({
     baseURL: API_BASE_URL,
@@ -64,7 +64,7 @@ api.interceptors.response.use(
         if (!error.response) {
 
             console.error(
-                "SentinelCore backend connection failed:",
+                "Cloud Security backend connection failed:",
                 error.message
             );
 

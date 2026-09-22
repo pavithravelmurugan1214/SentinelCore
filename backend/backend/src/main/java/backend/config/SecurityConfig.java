@@ -46,6 +46,13 @@ public class SecurityConfig {
                 .authorizeHttpRequests(auth -> auth
 
                         // ===========================
+                        // Swagger UI & OpenAPI Docs
+                        // ===========================
+                        .requestMatchers("/swagger-ui/**").permitAll()
+                        .requestMatchers("/v3/api-docs/**").permitAll()
+                        .requestMatchers("/swagger-ui.html").permitAll()
+
+                        // ===========================
                         // Public APIs
                         // ===========================
                         .requestMatchers("/api/auth/**").permitAll()
@@ -158,6 +165,28 @@ public class SecurityConfig {
                         .requestMatchers(HttpMethod.DELETE,
                                 "/api/alerts/**")
                         .hasRole("ADMIN")
+
+                        // ===========================
+                        // Alert Rules & Engine
+                        // ===========================
+                        .requestMatchers(HttpMethod.GET,
+                                "/api/alert-rules/**")
+                        .hasAnyRole("ADMIN", "ANALYST", "VIEWER", "MANAGER")
+
+                        .requestMatchers(HttpMethod.POST,
+                                "/api/alert-rules/**")
+                        .hasAnyRole("ADMIN", "ANALYST")
+
+                        .requestMatchers(HttpMethod.PUT,
+                                "/api/alert-rules/**")
+                        .hasAnyRole("ADMIN", "ANALYST")
+
+                        .requestMatchers(HttpMethod.DELETE,
+                                "/api/alert-rules/**")
+                        .hasRole("ADMIN")
+
+                        .requestMatchers("/api/alert-engine/**")
+                        .hasAnyRole("ADMIN", "ANALYST")
 
                         // ===========================
                         // Notifications

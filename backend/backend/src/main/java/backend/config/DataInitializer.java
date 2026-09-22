@@ -79,6 +79,7 @@ public class DataInitializer implements CommandLineRunner {
         seedKnowledgeBase();
         seedNotifications();
         seedAuditLogs();
+        playbookService.seedDefaultPlaybooks();
     }
 
     private void seedRoles() {

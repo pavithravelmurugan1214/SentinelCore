@@ -39,7 +39,7 @@ function ComposeMail({ onSendEmail, onClose }) {
 
     const newMail = {
       id: Date.now(),
-      sender: "security-simulation@sentinelcore.local",
+      sender: "security-simulation@cloudsecurity.local",
       recipient: to,
       subject: subject,
       body: body,

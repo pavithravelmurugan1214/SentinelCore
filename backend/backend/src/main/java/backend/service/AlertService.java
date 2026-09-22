@@ -36,9 +36,9 @@ public class AlertService {
         return userRepository.findByEmail(email).orElse(null);
     }
 
-    // Get All Alerts
+    // Get All Alerts (sorted newest first by ID)
     public List<Alert> getAllAlerts() {
-        return alertRepository.findAll();
+        return alertRepository.findAllByOrderByIdDesc();
     }
 
     // Get Alert By ID

@@ -81,6 +81,21 @@ public class LogWatcherService {
                 )
         );
 
+        // Initialize log directories and files if they do not exist
+        for (LogFile lf : logFiles) {
+            try {
+                java.nio.file.Path path = lf.getPath();
+                if (path.getParent() != null && !java.nio.file.Files.exists(path.getParent())) {
+                    java.nio.file.Files.createDirectories(path.getParent());
+                }
+                if (!java.nio.file.Files.exists(path)) {
+                    java.nio.file.Files.createFile(path);
+                }
+            } catch (Exception e) {
+                System.err.println("Could not initialize log file: " + lf.getPath() + " - " + e.getMessage());
+            }
+        }
+
         System.out.println("\n========================================");
         System.out.println("SentinelCore Log Collector Started");
         System.out.println("Monitoring " + logFiles.size() + " log sources");

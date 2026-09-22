@@ -142,7 +142,7 @@ function Sidebar() {
 
         <h1 className="text-white font-bold text-lg tracking-wider flex items-center gap-2">
           <FaShieldAlt className="text-sky-500 shrink-0" />
-          <span className="uppercase">{settings.organizationName || settings.platformName || "SENTINEL CORE"}</span>
+          <span className="uppercase">{settings.organizationName || settings.platformName || "CLOUD SECURITY"}</span>
         </h1>
 
         <p className="text-slate-400 text-sm mt-2">
@@ -222,7 +222,7 @@ function Sidebar() {
             </p>
 
             <p className="text-slate-500 text-[10px] mt-0.5 truncate">
-              {settings.userEmail || localStorage.getItem("email") || "guest@sentinelcore.local"}
+              {settings.userEmail || localStorage.getItem("email") || "guest@cloudsecurity.local"}
             </p>
 
           </div>

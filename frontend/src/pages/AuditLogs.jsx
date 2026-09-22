@@ -468,7 +468,7 @@ function AuditLogs() {
                     <div>
                       <h4 className="text-xs font-bold text-slate-500 uppercase tracking-wider">User Email</h4>
                       <p className="text-slate-400 text-xs mt-1 truncate">
-                        {selectedLog.user?.email || "system@sentinelcore.local"}
+                        {selectedLog.user?.email || "system@cloudsecurity.local"}
                       </p>
                     </div>
                   </div>

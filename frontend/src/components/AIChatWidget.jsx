@@ -18,7 +18,7 @@ export default function AIChatWidget() {
     const [messages, setMessages] = useState([
         {
             sender: "ai",
-            text: "👋 Hello! I am SentinelCore AI Assistant.\n\nHow can I help you today?"
+            text: "👋 Hello! I am Cloud Security AI Assistant.\n\nHow can I help you today?"
         }
     ]);
 
@@ -97,7 +97,7 @@ export default function AIChatWidget() {
         setMessages([
             {
                 sender: "ai",
-                text: "👋 Hello! I am SentinelCore AI Assistant.\n\nHow can I help you today?"
+                text: "👋 Hello! I am Cloud Security AI Assistant.\n\nHow can I help you today?"
             }
         ]);
 
@@ -204,7 +204,7 @@ export default function AIChatWidget() {
                             />
 
                             <h2 className="text-cyan-400 font-bold text-lg">
-                                SentinelCore AI
+                                Cloud Security AI
                             </h2>
 
                         </div>

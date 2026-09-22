@@ -20,7 +20,7 @@ function AuthLayout({ children }) {
             <div>
 
               <h1 className="text-4xl font-bold">
-                SentinelCore
+                Cloud Security
               </h1>
 
               <p className="text-slate-300 mt-2">

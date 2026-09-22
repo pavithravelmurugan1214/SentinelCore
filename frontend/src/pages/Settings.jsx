@@ -79,7 +79,7 @@ function Settings() {
         emailEnabled: true,
         smtpHost: "smtp.gmail.com",
         smtpPort: 587,
-        senderEmail: "admin@sentinelcore.com",
+        senderEmail: "admin@cloudsecurity.com",
         senderPassword: "••••••••••••",
         webhookEnabled: false,
         webhookUrl: "",
@@ -95,7 +95,7 @@ function Settings() {
 
     // System Settings State
     const [systemSettings, setSystemSettings] = useState({
-        organizationName: "SentinelCore",
+        organizationName: "Cloud Security",
         timezone: "Asia/Kolkata",
     });
 
@@ -698,7 +698,7 @@ function Settings() {
                                                         value={notificationSettings.senderEmail}
                                                         onChange={(e) => setNotificationSettings({ ...notificationSettings, senderEmail: e.target.value })}
                                                         required
-                                                        placeholder="admin@sentinelcore.com"
+                                                        placeholder="admin@cloudsecurity.com"
                                                         className="w-full bg-slate-900 border border-slate-750 focus:border-sky-500 rounded-xl px-4 py-3 text-slate-100 text-sm focus:outline-none transition-colors"
                                                     />
                                                 </div>
@@ -907,7 +907,7 @@ function Settings() {
                                                         value={systemSettings.organizationName}
                                                         onChange={(e) => setSystemSettings({ ...systemSettings, organizationName: e.target.value })}
                                                         required
-                                                        placeholder="SentinelCore"
+                                                        placeholder="Cloud Security"
                                                         className="w-full bg-slate-900 border border-slate-750 focus:border-sky-500 rounded-xl px-4 py-3 text-slate-100 text-sm focus:outline-none transition-colors"
                                                     />
                                                 </div>

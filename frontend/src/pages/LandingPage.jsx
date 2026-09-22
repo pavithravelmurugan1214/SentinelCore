@@ -210,7 +210,7 @@ function LandingPage() {
 
   // Simulated live SOC security logs state
   const [logs, setLogs] = useState([
-    { time: "18:28:10", type: "INFO", msg: "SentinelCore AI Engine initialized." },
+    { time: "18:28:10", type: "INFO", msg: "Cloud Security AI Engine initialized." },
     { time: "18:28:12", type: "SUCCESS", msg: "Database security connection established." },
     { time: "18:28:15", type: "WARN", msg: "Port scan detected from IP: 45.132.8.90." },
     { time: "18:28:18", type: "DANGER", msg: "XSS payload blocked on path '/auth/login'." }
@@ -261,7 +261,7 @@ function LandingPage() {
             <div className="sc-logo-row">
               <Shield size={24} className="sc-logo-accent" />
               <span className="sc-logo-text">
-                Sentinel<span className="sc-logo-accent">Core</span>
+                Cloud<span className="sc-logo-accent">Security</span>
               </span>
             </div>
             <span className="sc-logo-subtitle">AI Security Platform</span>
@@ -366,7 +366,7 @@ function LandingPage() {
                   <span className="sc-dashboard-dot sc-dot-yellow"></span>
                   <span className="sc-dashboard-dot sc-dot-green"></span>
                 </div>
-                <div className="sc-dashboard-title">SENTINEL-SOC-CONSOLE</div>
+                <div className="sc-dashboard-title">CLOUD-SECURITY-SOC-CONSOLE</div>
                 <div className="sc-dashboard-status">
                   <span className="sc-status-indicator"></span>
                   LIVE SCANNING
@@ -451,7 +451,7 @@ function LandingPage() {
             Evolving Threat Protection
           </div>
           <p className="sc-section-subtitle" style={{ fontSize: "1.35rem", lineHeight: "1.8", color: "#F1F5F9", fontWeight: 500, margin: 0 }}>
-            Cyber threats are constantly evolving. SentinelCore gives your team the visibility, intelligence, and automation needed to detect threats early, protect critical assets, and maintain a strong security posture.
+            Cyber threats are constantly evolving. Cloud Security gives your team the visibility, intelligence, and automation needed to detect threats early, protect critical assets, and maintain a strong security posture.
           </p>
         </div>
       </section>
@@ -463,7 +463,7 @@ function LandingPage() {
           <div className="sc-section-header">
             <h2 className="sc-section-title">Comprehensive Security Capabilities</h2>
             <p className="sc-section-subtitle">
-              SentinelCore provides complete visibility and defense-in-depth across your digital environment.
+              Cloud Security provides complete visibility and defense-in-depth across your digital environment.
             </p>
           </div>
 
@@ -554,9 +554,9 @@ function LandingPage() {
       <section id="architecture" className="sc-section">
         <div className="sc-architecture-container">
           <div className="sc-section-header">
-            <h2 className="sc-section-title">SentinelCore Operational Architecture</h2>
+            <h2 className="sc-section-title">Cloud Security Operational Architecture</h2>
             <p className="sc-section-subtitle">
-              How network telemetry travels through the SentinelCore stack from entry ingestion to threat resolution and reporting.
+              How network telemetry travels through the Cloud Security stack from entry ingestion to threat resolution and reporting.
             </p>
           </div>
 
@@ -590,7 +590,7 @@ function LandingPage() {
       <section className="sc-cta">
         <div className="sc-cta-glow"></div>
         <div className="sc-cta-container">
-          <h2 className="sc-cta-title">Secure Your Organization with SentinelCore</h2>
+          <h2 className="sc-cta-title">Secure Your Organization with Cloud Security</h2>
           <p className="sc-cta-desc">
             Deploy automated artificial intelligence pipelines to monitor, isolate, and neutralize digital threats across your entire enterprise infrastructure today.
           </p>
@@ -599,7 +599,7 @@ function LandingPage() {
               Get Started <ArrowRight size={16} />
             </Link>
             <a 
-              href="mailto:support@sentinelcore.com" 
+              href="mailto:support@cloudsecurity.com" 
               className="sc-btn sc-btn-outline"
             >
               Contact Security Team
@@ -613,10 +613,10 @@ function LandingPage() {
         <div className="sc-footer-container">
           <div className="sc-footer-logo-group">
             <span className="sc-footer-logo">
-              Sentinel<span className="sc-logo-accent">Core</span>
+              Cloud<span className="sc-logo-accent">Security</span>
             </span>
             <span className="sc-footer-copy">
-              © {new Date().getFullYear()} SentinelCore Inc. All rights reserved.
+              © {new Date().getFullYear()} Cloud Security Inc. All rights reserved.
             </span>
           </div>
 
@@ -631,7 +631,7 @@ function LandingPage() {
               GitHub
             </a>
             <a href="#home" onClick={(e) => { e.preventDefault(); scrollToSection("home"); }} className="sc-footer-link">Privacy Policy</a>
-            <a href="mailto:support@sentinelcore.com" className="sc-footer-link">Contact Support</a>
+            <a href="mailto:support@cloudsecurity.com" className="sc-footer-link">Contact Support</a>
           </div>
         </div>
       </footer>

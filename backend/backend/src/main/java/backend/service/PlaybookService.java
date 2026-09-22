@@ -48,7 +48,6 @@ public class PlaybookService {
         private final ExecutorService executorService = Executors.newCachedThreadPool();
 
         // ================= Database Seeder =================
-        @PostConstruct
         @Transactional
         public void seedDefaultPlaybooks() {
                 // Drop existing check constraint if database already exists to allow new action types
@@ -2415,7 +2414,7 @@ public class PlaybookService {
                                         return playbookRepository.save(newPb);
                                 });
 
-                return triggerPlaybook(bruteForcePlaybook.getId(), incident.getId(), null);
+                return triggerPlaybook(bruteForcePlaybook.getId(), incident.getId(), null, true);
         }
 
         @Transactional
@@ -2513,16 +2512,38 @@ public class PlaybookService {
                                 .severity(isPhishing ? "Critical" : "Low")
                                 .status("Open")
                                 .source("Phishing Simulator")
+                                .priority(isPhishing ? "P1" : "P3")
+                                .detectionTime(LocalDateTime.now())
+                                .slaDeadline(LocalDateTime.now().plusHours(isPhishing ? 2 : 24))
                                 .build();
                 incident = incidentRepository.save(incident);
 
-                // Seed Phishing Playbook if it doesn't exist
-                seedPhishingPlaybook();
+                // If phishing, also create an Alert so it appears in the main Alert List
+                if (isPhishing && alertRepository != null) {
+                        try {
+                                Alert alert = new Alert();
+                                alert.setTitle("Phishing Email Detected: " + subject);
+                                alert.setDescription(String.format("Suspicious inbound email from '%s' with subject '%s'. Triggered automatic containment playbook.", sender, subject));
+                                alert.setSeverity("Critical");
+                                alert.setSource("Phishing Gateway");
+                                alert.setStatus("Open");
+                                alert.setLastOccurred(LocalDateTime.now());
+                                alert.setEmailSender(sender);
+                                alert.setEmailRecipient(recipient);
+                                alert.setEmailSubject(subject);
+                                alert.setEmailBody(body);
+                                alert.setVerdict("PHISHING");
+                                alert.setRiskScore(90);
+                                alertRepository.save(alert);
+                        } catch (Exception e) {
+                                log.warn("Could not save alert for phishing email: {}", e.getMessage());
+                        }
+                }
 
                 Playbook phishingPlaybook = playbookRepository.findByName("Phishing Email Response")
                                 .orElseThrow(() -> new RuntimeException("Phishing Email Response playbook not found"));
 
-                return triggerPlaybook(phishingPlaybook.getId(), incident.getId(), null);
+                return triggerPlaybook(phishingPlaybook.getId(), incident.getId(), null, true);
         }
 
         private java.util.Map<String, String> parseIncidentEmailDetails(String description) {

@@ -6,7 +6,7 @@ const SettingsContext = createContext();
 
 export function SettingsProvider({ children }) {
     const [settings, setSettings] = useState({
-        organizationName: "SentinelCore",
+        organizationName: "Cloud Security",
         timezone: "Asia/Kolkata",
         theme: "dark",
         userName: "",

@@ -630,7 +630,7 @@ Specify corrective action items to mitigate recurrence:
                         <FaBookOpen className="text-3xl text-sky-500" />
                       </div>
                       <div className="space-y-2 max-w-md">
-                        <h3 className="text-2xl font-bold text-white">Sentinel KB Center</h3>
+                        <h3 className="text-2xl font-bold text-white">Cloud Security KB Center</h3>
                         <p className="text-slate-400 text-sm leading-relaxed">
                           Welcome to the operations wiki. Search and consult containment runbooks, read incident autopsy logs, or reference detection engineering rules.
                         </p>

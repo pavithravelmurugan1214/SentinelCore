@@ -112,7 +112,7 @@ function Register() {
                     </div>
 
                     <h1 className="text-3xl font-extrabold tracking-tight text-white flex items-center gap-1">
-                        Sentinel<span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-blue-500">Core</span>
+                        Cloud<span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-blue-500">Security</span>
                     </h1>
 
                     <p className="text-[10px] font-bold tracking-[4px] text-sky-400/80 uppercase mt-1">

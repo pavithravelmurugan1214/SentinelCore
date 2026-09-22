@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { X, Play } from "lucide-react";
+import { toast } from "react-toastify";
 import api from "../services/api";
 import ModernSelect from "./ui/ModernSelect";
 import ModernInput from "./ui/ModernInput";
@@ -20,13 +21,23 @@ export default function TestAlertEngineModal({ open, onClose }) {
         setLoading(true);
         try {
             await api.post("/alert-engine/process", eventData);
-            alert("✅ Test security event injected successfully!");
+            toast.success(`⚡ [${eventData.eventType}] Event Injected! Alert Engine triggered successfully.`, {
+                position: "top-right",
+                autoClose: 4000,
+                theme: "dark"
+            });
             onClose();
         } catch (error) {
             console.error("Failed to inject event", error);
-            alert("❌ Failed to process security event");
+            const msg = error.response?.data?.message || error.response?.data || error.message || "Failed to process security event";
+            toast.error(`❌ Security event injection failed: ${msg}`, {
+                position: "top-right",
+                autoClose: 5000,
+                theme: "dark"
+            });
+        } finally {
+            setLoading(false);
         }
-        setLoading(false);
     };
 
     return (

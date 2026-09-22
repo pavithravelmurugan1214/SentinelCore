@@ -19,7 +19,7 @@ function LoginForm({
         </h2>
 
         <p className="text-slate-500 mt-2">
-          Sign in to continue to SentinelCore
+          Sign in to continue to Cloud Security
         </p>
 
         <form

@@ -1,0 +1,245 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+2 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+3 0 obj
+<< /Length 6965 >>
+stream
+0.1 0.3 0.6 rg
+40 767 532 2 re f
+BT /F1 8 Tf 0.4 0.4 0.4 rg 40 20 Td (SentinelCore - Technical Review & Viva Guide) Tj ET
+BT /F1 8 Tf 0.4 0.4 0.4 rg 520 20 Td (Page 1) Tj ET
+BT /F2 16 Tf 0.05 0.1 0.25 rg 40 752 Td (SentinelCore - Technical Review & Viva Q&A Guide) Tj ET
+BT /F1 9 Tf 0.3 0.35 0.45 rg 40 730 Td (Stack: Spring Boot 3, Spring Security, JWT, JPA, React | Architecture: 3-Tier Layered) Tj ET
+0.8 0.85 0.9 rg 40 714 532 1 re f
+BT /F2 12 Tf 0.1 0.25 0.6 rg 40 700 Td (Section 1: Architecture & Package Quick Reference) Tj ET
+0.92 0.94 0.98 rg 40 679 532 15 re f
+BT /F2 8.5 Tf 0.05 0.1 0.25 rg 45 682 Td (Package / File) Tj ET
+BT /F2 8.5 Tf 0.05 0.1 0.25 rg 190 682 Td (Purpose & Responsibility) Tj ET
+BT /F2 8.5 Tf 0.05 0.1 0.25 rg 410 682 Td (Key Annotation / Pattern) Tj ET
+0.9 0.9 0.92 rg 40 664 532 0.5 re f
+BT /F1 8 Tf 0.2 0.25 0.3 rg 45 667 Td (BackendApplication.java) Tj ET
+BT /F1 8 Tf 0.2 0.25 0.3 rg 190 667 Td (Main Application Bootstrap Entry Point) Tj ET
+BT /F1 8 Tf 0.2 0.25 0.3 rg 410 667 Td (@SpringBootApplication) Tj ET
+0.9 0.9 0.92 rg 40 649 532 0.5 re f
+BT /F1 8 Tf 0.2 0.25 0.3 rg 45 652 Td (controller/) Tj ET
+BT /F1 8 Tf 0.2 0.25 0.3 rg 190 652 Td (REST API Endpoints & Request Mapping) Tj ET
+BT /F1 8 Tf 0.2 0.25 0.3 rg 410 652 Td (@RestController, @RequestMapping) Tj ET
+0.9 0.9 0.92 rg 40 634 532 0.5 re f
+BT /F1 8 Tf 0.2 0.25 0.3 rg 45 637 Td (service/) Tj ET
+BT /F1 8 Tf 0.2 0.25 0.3 rg 190 637 Td (Core Business Logic, Rule & Alert Engines) Tj ET
+BT /F1 8 Tf 0.2 0.25 0.3 rg 410 637 Td (@Service, @Transactional) Tj ET
+0.9 0.9 0.92 rg 40 619 532 0.5 re f
+BT /F1 8 Tf 0.2 0.25 0.3 rg 45 622 Td (repository/) Tj ET
+BT /F1 8 Tf 0.2 0.25 0.3 rg 190 622 Td (Database CRUD Operations via Spring Data JPA) Tj ET
+BT /F1 8 Tf 0.2 0.25 0.3 rg 410 622 Td (@Repository, JpaRepository) Tj ET
+0.9 0.9 0.92 rg 40 604 532 0.5 re f
+BT /F1 8 Tf 0.2 0.25 0.3 rg 45 607 Td (entity/) Tj ET
+BT /F1 8 Tf 0.2 0.25 0.3 rg 190 607 Td (Database Table Schemas & Relational Mappings) Tj ET
+BT /F1 8 Tf 0.2 0.25 0.3 rg 410 607 Td (@Entity, @Table, @Id) Tj ET
+0.9 0.9 0.92 rg 40 589 532 0.5 re f
+BT /F1 8 Tf 0.2 0.25 0.3 rg 45 592 Td (security/) Tj ET
+BT /F1 8 Tf 0.2 0.25 0.3 rg 190 592 Td (JWT Filter, Token Provider & User Auth) Tj ET
+BT /F1 8 Tf 0.2 0.25 0.3 rg 410 592 Td (OncePerRequestFilter, @Component) Tj ET
+0.9 0.9 0.92 rg 40 574 532 0.5 re f
+BT /F1 8 Tf 0.2 0.25 0.3 rg 45 577 Td (config/) Tj ET
+BT /F1 8 Tf 0.2 0.25 0.3 rg 190 577 Td (Spring Security RBAC, CORS & Beans Config) Tj ET
+BT /F1 8 Tf 0.2 0.25 0.3 rg 410 577 Td (@Configuration, @Bean) Tj ET
+0.9 0.9 0.92 rg 40 559 532 0.5 re f
+BT /F1 8 Tf 0.2 0.25 0.3 rg 45 562 Td (collector/) Tj ET
+BT /F1 8 Tf 0.2 0.25 0.3 rg 190 562 Td (Real-time Server Log Monitoring & Syslog Parser) Tj ET
+BT /F1 8 Tf 0.2 0.25 0.3 rg 410 562 Td (File Tailers, Regex Parsers) Tj ET
+0.9 0.9 0.92 rg 40 544 532 0.5 re f
+BT /F1 8 Tf 0.2 0.25 0.3 rg 45 547 Td (scheduler/) Tj ET
+BT /F1 8 Tf 0.2 0.25 0.3 rg 190 547 Td (Automated Background Cron Tasks \(Escalations\)) Tj ET
+BT /F1 8 Tf 0.2 0.25 0.3 rg 410 547 Td (@Scheduled\(cron = '...'\)) Tj ET
+0.9 0.9 0.92 rg 40 529 532 0.5 re f
+BT /F1 8 Tf 0.2 0.25 0.3 rg 45 532 Td (exception/) Tj ET
+BT /F1 8 Tf 0.2 0.25 0.3 rg 190 532 Td (Centralized Global Error & Exception Handling) Tj ET
+BT /F1 8 Tf 0.2 0.25 0.3 rg 410 532 Td (@RestControllerAdvice) Tj ET
+0.9 0.9 0.92 rg 40 514 532 0.5 re f
+BT /F1 8 Tf 0.2 0.25 0.3 rg 45 517 Td (specification/) Tj ET
+BT /F1 8 Tf 0.2 0.25 0.3 rg 190 517 Td (Dynamic Multi-Filter Database Queries) Tj ET
+BT /F1 8 Tf 0.2 0.25 0.3 rg 410 517 Td (JpaSpecificationExecutor) Tj ET
+0.8 0.85 0.9 rg 40 502 532 1 re f
+BT /F2 12 Tf 0.1 0.25 0.6 rg 40 488 Td (Section 2: Top 20 Code-Level Viva Questions & Answers) Tj ET
+BT /F2 10 Tf 0.05 0.1 0.2 rg 40 470 Td (Q1. Where is the main application entry point, and how does Spring Boot initialize?) Tj ET
+BT /F2 8.5 Tf 0.0 0.45 0.7 rg 45 455 Td (Code Path: backend/BackendApplication.java) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 442 Td (Answer: The application initializes from BackendApplication.java. The @SpringBootApplication) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 430 Td (annotation triggers auto-configuration, component scanning across all sub-packages, and) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 418 Td (initializes the Spring ApplicationContext while starting the embedded Tomcat container on port) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 406 Td (8080.) Tj ET
+BT /F2 10 Tf 0.05 0.1 0.2 rg 40 386 Td (Q2. Where are the Role-Based Access Control \(RBAC\) rules defined for Admin, Analyst,) Tj ET
+BT /F2 10 Tf 0.05 0.1 0.2 rg 40 373 Td (and Viewer?) Tj ET
+BT /F2 8.5 Tf 0.0 0.45 0.7 rg 45 358 Td (Code Path: backend/config/SecurityConfig.java \(lines 80-275\)) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 345 Td (Answer: All endpoint access rules are declared inside SecurityConfig.java. Using Spring) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 333 Td (Security matchers: VIEWER has read-only access \(GET requests\), ANALYST has read & write access) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 321 Td (\(POST, PUT for operations\), and ADMIN has full access including DELETE actions, User) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 309 Td (Management, and System Settings.) Tj ET
+BT /F2 10 Tf 0.05 0.1 0.2 rg 40 289 Td (Q3. How do you store user passwords securely in the database?) Tj ET
+BT /F2 8.5 Tf 0.0 0.45 0.7 rg 45 274 Td (Code Path: backend/config/SecurityConfig.java & backend/service/AuthService.java) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 261 Td (Answer: We never store raw passwords. We register a BCryptPasswordEncoder bean in) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 249 Td (SecurityConfig.java. During user registration in AuthService.java, the raw password is) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 237 Td (automatically salted and hashed using the BCrypt hashing algorithm before being persisted to) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 225 Td (the database.) Tj ET
+BT /F2 10 Tf 0.05 0.1 0.2 rg 40 205 Td (Q4. Where is the JWT token generated upon login, and what claims are stored inside) Tj ET
+BT /F2 10 Tf 0.05 0.1 0.2 rg 40 192 Td (it?) Tj ET
+BT /F2 8.5 Tf 0.0 0.45 0.7 rg 45 177 Td (Code Path: backend/security/JwtTokenProvider.java) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 164 Td (Answer: JWT generation is encapsulated inside JwtTokenProvider.java. Upon successful) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 152 Td (authentication, generateToken\(\) builds a token containing user subject, roles/authorities) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 140 Td (claims, issue timestamp, and expiration time, cryptographically signed with HMAC-SHA256 using a) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 128 Td (secure secret key.) Tj ET
+BT /F2 10 Tf 0.05 0.1 0.2 rg 40 108 Td (Q5. How does the backend intercept and validate incoming JWT tokens on every HTTP) Tj ET
+BT /F2 10 Tf 0.05 0.1 0.2 rg 40 95 Td (request?) Tj ET
+BT /F2 8.5 Tf 0.0 0.45 0.7 rg 45 80 Td (Code Path: backend/security/JwtAuthenticationFilter.java) Tj ET
+
+endstream
+endobj
+4 0 obj
+<< /Length 5809 >>
+stream
+0.1 0.3 0.6 rg
+40 767 532 2 re f
+BT /F1 8 Tf 0.4 0.4 0.4 rg 40 20 Td (SentinelCore - Technical Review & Viva Guide) Tj ET
+BT /F1 8 Tf 0.4 0.4 0.4 rg 520 20 Td (Page 2) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 752 Td (Answer: We implemented a custom JwtAuthenticationFilter extending OncePerRequestFilter. It) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 740 Td (intercepts each HTTP request, extracts the Bearer token from the Authorization header, verifies) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 728 Td (the signature using JwtTokenProvider, loads user authorities, and registers the Authentication) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 716 Td (object in SecurityContextHolder.) Tj ET
+BT /F2 10 Tf 0.05 0.1 0.2 rg 40 696 Td (Q6. How does user signup work, and how do you prevent unauthorized Admin) Tj ET
+BT /F2 10 Tf 0.05 0.1 0.2 rg 40 683 Td (registrations?) Tj ET
+BT /F2 8.5 Tf 0.0 0.45 0.7 rg 45 668 Td (Code Path: backend/service/AuthService.java) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 655 Td (Answer: In AuthService.java, when a new user signs up, the service checks the requested role.) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 643 Td (To prevent regular users from creating elevated accounts, registering as an ADMIN or ANALYST) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 631 Td (strictly requires supplying a pre-configured secret passkey \(Admin@only / Analyst@only\).) Tj ET
+BT /F2 10 Tf 0.05 0.1 0.2 rg 40 611 Td (Q7. How does the system seed default configurations like SMTP, escalation SLA, and) Tj ET
+BT /F2 10 Tf 0.05 0.1 0.2 rg 40 598 Td (retention limits?) Tj ET
+BT /F2 8.5 Tf 0.0 0.45 0.7 rg 45 583 Td (Code Path: backend/service/SettingsService.java \(lines 25-50\)) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 570 Td (Answer: In SettingsService.java, an @PostConstruct lifecycle method executes immediately after) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 558 Td (bean initialization. It checks if configuration keys like SMTP_EMAIL, ALERT_ESCALATION_MINUTES,) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 546 Td (and LOG_RETENTION_DAYS exist in the database; if not, it automatically seeds default key-value) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 534 Td (pairs.) Tj ET
+BT /F2 10 Tf 0.05 0.1 0.2 rg 40 514 Td (Q8. Where is the core Alert Engine logic that evaluates events and triggers alerts?) Tj ET
+BT /F2 8.5 Tf 0.0 0.45 0.7 rg 45 499 Td (Code Path: backend/service/AlertEngineService.java) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 486 Td (Answer: The core detection engine is in AlertEngineService.java. It parses incoming security) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 474 Td (events and compares attributes against active rules from AlertRuleRepository. When criteria) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 462 Td (like event thresholds, failed login attempts, or threat signatures match, it automatically) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 450 Td (creates and saves a new Alert entity.) Tj ET
+BT /F2 10 Tf 0.05 0.1 0.2 rg 40 430 Td (Q9. How are threat detection rules created and managed?) Tj ET
+BT /F2 8.5 Tf 0.0 0.45 0.7 rg 45 415 Td (Code Path: backend/service/AlertRuleService.java) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 402 Td (Answer: Detection rules specifying log source, condition type, threshold value, time window,) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 390 Td (and severity level are managed in AlertRuleService.java. The Alert Engine queries this service) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 378 Td (to evaluate live event streams against active rules.) Tj ET
+BT /F2 10 Tf 0.05 0.1 0.2 rg 40 358 Td (Q10. What is a Playbook in SentinelCore, and how does automated incident response) Tj ET
+BT /F2 10 Tf 0.05 0.1 0.2 rg 40 345 Td (work?) Tj ET
+BT /F2 8.5 Tf 0.0 0.45 0.7 rg 45 330 Td (Code Path: backend/service/PlaybookService.java) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 317 Td (Answer: Playbooks provide SOAR \(Security Orchestration, Automation, and Response\)) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 305 Td (capabilities. In PlaybookService.java, predefined containment actions \(such as blocking) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 293 Td (malicious IPs, isolating hosts, or dispatching emergency SOC alerts\) execute automatically in) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 281 Td (sequential steps when a critical incident occurs.) Tj ET
+BT /F2 10 Tf 0.05 0.1 0.2 rg 40 261 Td (Q11. How does an Alert escalate into a full Security Incident?) Tj ET
+BT /F2 8.5 Tf 0.0 0.45 0.7 rg 45 246 Td (Code Path: backend/service/IncidentService.java) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 233 Td (Answer: In IncidentService.java, high-severity or correlated alerts are promoted to an) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 221 Td (Incident. The service assigns a priority, links affected assets and source alerts, manages) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 209 Td (lifecycle states \(OPEN -> INVESTIGATING -> MITIGATED -> CLOSED\), and logs every modification to) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 197 Td (the audit trail.) Tj ET
+BT /F2 10 Tf 0.05 0.1 0.2 rg 40 177 Td (Q12. How does IOC \(Indicators of Compromise\) matching and correlation work?) Tj ET
+BT /F2 8.5 Tf 0.0 0.45 0.7 rg 45 162 Td (Code Path: backend/service/IOCCorrelationService.java & IOCDetectionService.java) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 149 Td (Answer: The IOCCorrelationService.java cross-references incoming log IP addresses, domains,) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 137 Td (and file hashes with the threat intelligence database \(ioc table\). If a match is detected, it) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 125 Td (instantly elevates the threat score and tags the alert as an active compromise.) Tj ET
+BT /F2 10 Tf 0.05 0.1 0.2 rg 40 105 Td (Q13. How does the system collect and parse external raw server logs?) Tj ET
+BT /F2 8.5 Tf 0.0 0.45 0.7 rg 45 90 Td (Code Path: backend/collector/LogWatcherService.java & LogParser.java) Tj ET
+
+endstream
+endobj
+5 0 obj
+<< /Length 5382 >>
+stream
+0.1 0.3 0.6 rg
+40 767 532 2 re f
+BT /F1 8 Tf 0.4 0.4 0.4 rg 40 20 Td (SentinelCore - Technical Review & Viva Guide) Tj ET
+BT /F1 8 Tf 0.4 0.4 0.4 rg 520 20 Td (Page 3) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 752 Td (Answer: The collector module continuously monitors server and auth log files.) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 740 Td (LogWatcherService.java tails log files in real-time, and LogParser.java tokenizes raw) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 728 Td (unstructured text into structured Java SecurityEvent objects for the Alert Engine.) Tj ET
+BT /F2 10 Tf 0.05 0.1 0.2 rg 40 708 Td (Q14. How does the system handle background tasks like alert escalation or asset) Tj ET
+BT /F2 10 Tf 0.05 0.1 0.2 rg 40 695 Td (heartbeat monitoring?) Tj ET
+BT /F2 8.5 Tf 0.0 0.45 0.7 rg 45 680 Td (Code Path: backend/scheduler/AlertEscalationScheduler.java) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 667 Td (Answer: We utilize Spring's @Scheduled annotation. AlertEscalationScheduler.java periodically) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 655 Td (scans the database for unacknowledged critical alerts exceeding the SLA threshold \(e.g. 10) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 643 Td (minutes\) and automatically promotes them to formal incidents.) Tj ET
+BT /F2 10 Tf 0.05 0.1 0.2 rg 40 623 Td (Q15. How do you handle runtime errors and exceptions centrally across all REST APIs?) Tj ET
+BT /F2 8.5 Tf 0.0 0.45 0.7 rg 45 608 Td (Code Path: backend/controller/GlobalExceptionHandler.java) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 595 Td (Answer: We implemented GlobalExceptionHandler.java using @RestControllerAdvice. It intercepts) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 583 Td (runtime exceptions \(such as ResourceNotFoundException or BadCredentialsException\) across all) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 571 Td (controllers and returns structured JSON responses with proper HTTP status codes \(400, 401, 404,) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 559 Td (500\).) Tj ET
+BT /F2 10 Tf 0.05 0.1 0.2 rg 40 539 Td (Q16. How do you implement dynamic multi-criteria search without hardcoding SQL) Tj ET
+BT /F2 10 Tf 0.05 0.1 0.2 rg 40 526 Td (queries?) Tj ET
+BT /F2 8.5 Tf 0.0 0.45 0.7 rg 45 511 Td (Code Path: backend/specification/AssetSpecification.java) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 498 Td (Answer: We use Spring Data JPA Specification<T>. In AssetSpecification.java, SQL criteria) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 486 Td (predicates are constructed dynamically based on the presence of user filters \(like IP address,) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 474 Td (OS type, or health status\), generating optimal database queries on demand.) Tj ET
+BT /F2 10 Tf 0.05 0.1 0.2 rg 40 454 Td (Q17. How is a database table mapped to a Java class in JPA?) Tj ET
+BT /F2 8.5 Tf 0.0 0.45 0.7 rg 45 439 Td (Code Path: backend/entity/Alert.java \(or backend/entity/User.java\)) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 426 Td (Answer: In Alert.java, the @Entity annotation declares the class as a persistent model, and) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 414 Td (@Table\(name = 'alerts'\) maps it to the database table. Fields are mapped with @Column, @Id) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 402 Td (defines the primary key, and @Enumerated\(EnumType.STRING\) persists enum states as readable) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 390 Td (strings.) Tj ET
+BT /F2 10 Tf 0.05 0.1 0.2 rg 40 370 Td (Q18. How do Spring Data JPA Repositories execute database queries without manual) Tj ET
+BT /F2 10 Tf 0.05 0.1 0.2 rg 40 357 Td (SQL?) Tj ET
+BT /F2 8.5 Tf 0.0 0.45 0.7 rg 45 342 Td (Code Path: backend/repository/AlertRepository.java) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 329 Td (Answer: By extending JpaRepository<Alert, Long>, Spring Data JPA automatically provides CRUD) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 317 Td (operations \(save, findById, findAll, deleteById\). In addition, Spring generates query) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 305 Td (implementations automatically based on method naming conventions like) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 293 Td (findByStatusOrderByCreatedAtDesc.) Tj ET
+BT /F2 10 Tf 0.05 0.1 0.2 rg 40 273 Td (Q19. How does a REST Controller receive HTTP requests and dispatch JSON responses?) Tj ET
+BT /F2 8.5 Tf 0.0 0.45 0.7 rg 45 258 Td (Code Path: backend/controller/AlertController.java) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 245 Td (Answer: In AlertController.java, the @RestController annotation ensures all method outputs) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 233 Td (serialize directly into JSON. @GetMapping maps incoming HTTP GET requests, calls the underlying) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 221 Td (AlertService, and returns the payload wrapped in a ResponseEntity with an HTTP 200 status code.) Tj ET
+BT /F2 10 Tf 0.05 0.1 0.2 rg 40 201 Td (Q20. How does the React frontend attach the JWT token to outgoing API requests?) Tj ET
+BT /F2 8.5 Tf 0.0 0.45 0.7 rg 45 186 Td (Code Path: frontend/src/services/api.js \(lines 29-44\)) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 173 Td (Answer: In frontend/src/services/api.js, we configure an Axios request interceptor. Before any) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 161 Td (HTTP request leaves the browser, the interceptor fetches the JWT token from localStorage and) Tj ET
+BT /F1 9 Tf 0.2 0.25 0.3 rg 45 149 Td (automatically injects the Authorization: Bearer <token> header into the request.) Tj ET
+
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 6 0 R /MediaBox [0 0 612 792] /Contents 3 0 R /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> >>
+endobj
+7 0 obj
+<< /Type /Page /Parent 6 0 R /MediaBox [0 0 612 792] /Contents 4 0 R /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> >>
+endobj
+8 0 obj
+<< /Type /Page /Parent 6 0 R /MediaBox [0 0 612 792] /Contents 5 0 R /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> >>
+endobj
+9 0 obj
+<< /Type /Pages /Kids [6 0 R 7 0 R 8 0 R] /Count 3 >>
+endobj
+10 0 obj
+<< /Type /Catalog /Pages 9 0 R >>
+endobj
+xref
+0 11
+0000000000 65535 f 
+0000000009 00000 n 
+0000000079 00000 n 
+0000000154 00000 n 
+0000007171 00000 n 
+0000013032 00000 n 
+0000018466 00000 n 
+0000018602 00000 n 
+0000018738 00000 n 
+0000018874 00000 n 
+0000018943 00000 n 
+trailer
+<< /Size 11 /Root 10 0 R >>
+startxref
+18993
+%%EOF

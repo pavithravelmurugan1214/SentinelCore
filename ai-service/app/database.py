@@ -5,19 +5,23 @@ DB_CONFIG = {
     "port": 5432,
     "database": "sentinelcore",
     "user": "postgres",
-    "password": "postgres"
+    "password": "postgres123"
 }
 
 
 def execute_query(query, params=None):
-    conn = psycopg2.connect(**DB_CONFIG)
-    cur = conn.cursor()
+    try:
+        conn = psycopg2.connect(**DB_CONFIG)
+        cur = conn.cursor()
 
-    cur.execute(query, params)
+        cur.execute(query, params)
 
-    rows = cur.fetchall()
+        rows = cur.fetchall()
 
-    cur.close()
-    conn.close()
+        cur.close()
+        conn.close()
 
-    return rows
+        return rows
+    except Exception as e:
+        print(f"Database query error: {e}")
+        return [[0]]

@@ -27,7 +27,7 @@ function RegisterForm({
                 </h2>
 
                 <p className="text-slate-500 mt-2">
-                    Register to access SentinelCore
+                    Register to access Cloud Security
                 </p>
 
                 <form

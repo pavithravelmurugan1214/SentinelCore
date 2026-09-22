@@ -67,18 +67,22 @@ function IOCList() {
 
     };
 
-    const filteredIOCs = iocs.filter((ioc) => {
+    const filteredIOCs = (iocs || []).filter((ioc) => {
+        if (!ioc) return false;
+
+        const typeStr = (ioc.type || "").toLowerCase();
+        const valueStr = (ioc.value || "").toLowerCase();
+        const searchLower = (search || "").toLowerCase();
 
         const matchesSearch =
-            ioc.type.toLowerCase().includes(search.toLowerCase()) ||
-            ioc.value.toLowerCase().includes(search.toLowerCase());
+            typeStr.includes(searchLower) ||
+            valueStr.includes(searchLower);
 
         const matchesRisk =
             riskFilter === "All" ||
             ioc.riskLevel === riskFilter;
 
         return matchesSearch && matchesRisk;
-
     });
 
     const getRiskBadge = (risk) => {

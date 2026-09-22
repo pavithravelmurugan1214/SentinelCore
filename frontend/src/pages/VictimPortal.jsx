@@ -69,7 +69,7 @@ function VictimPortal() {
     setFailedAttempts(newCount);
 
     if (newCount >= 5) {
-      setStatusMessage(`🚨 5 Failed login attempts from IP ${ip}! Triggering SentinelCore IP Block Playbook...`);
+      setStatusMessage(`🚨 5 Failed login attempts from IP ${ip}! Triggering Cloud Security IP Block Playbook...`);
       await triggerBruteForce();
     } else {
       setStatusMessage(`❌ Invalid password for ${email}. Failed attempt ${newCount} of 5 from IP ${ip}. Logged in successfully from ${location} beforehand (change location next with the SAME password to trigger travel anomaly).`);
@@ -85,7 +85,7 @@ function VictimPortal() {
       const result = await playbookService.simulateBruteForce(ip, email);
       setExecutionInfo(result);
       setIsBlocked(true);
-      setStatusMessage(`🚨 BRUTE FORCE ATTACK CONTAINED: Source IP ${ip} & Account ${email} BLOCKED by SentinelCore SOC!`);
+      setStatusMessage(`🚨 BRUTE FORCE ATTACK CONTAINED: Source IP ${ip} & Account ${email} BLOCKED by Cloud Security SOC!`);
     } catch (err) {
       console.error("Simulation failed", err);
       setStatusMessage("Failed to execute playbook simulation.");
@@ -102,7 +102,7 @@ function VictimPortal() {
       const result = await playbookService.simulateUnauthorizedLogin(ip, email, location);
       setExecutionInfo(result);
       setIsBlocked(true);
-      setStatusMessage(`🚨 UNAUTHORIZED LOGIN DETECTED: Source IP ${ip} & Account ${email} BLOCKED by SentinelCore SOC due to anomalous login from ${location}!`);
+      setStatusMessage(`🚨 UNAUTHORIZED LOGIN DETECTED: Source IP ${ip} & Account ${email} BLOCKED by Cloud Security SOC due to anomalous login from ${location}!`);
     } catch (err) {
       console.error("Simulation failed", err);
       setStatusMessage("Failed to execute playbook simulation.");
@@ -187,7 +187,7 @@ function VictimPortal() {
             alignItems: "center",
             gap: "8px"
           }}>
-            🛡️ Open SentinelCore SOC Dashboard
+            🛡️ Open Cloud Security SOC Dashboard
           </Link>
         </div>
       </header>
@@ -259,7 +259,7 @@ function VictimPortal() {
               marginBottom: "28px"
             }}>
               <h4 style={{ margin: "0 0 14px 0", color: "#9ca3af", fontSize: "12px", textTransform: "uppercase", letterSpacing: "0.5px" }}>
-                🛡️ SentinelCore Playbook IP Containment Record
+                🛡️ Cloud Security Playbook IP Containment Record
               </h4>
               <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "14px", fontSize: "14px" }}>
                 <div>

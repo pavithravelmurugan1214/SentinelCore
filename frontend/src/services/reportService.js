@@ -8,7 +8,7 @@ export const exportThreatsPDF = (threats) => {
     const doc = new jsPDF();
 
     doc.setFontSize(20);
-    doc.text("SentinelCore Security Report", 14, 20);
+    doc.text("Cloud Security Report", 14, 20);
 
     doc.setFontSize(11);
     doc.text(
@@ -31,7 +31,7 @@ export const exportThreatsPDF = (threats) => {
         body: rows,
     });
 
-    doc.save("SentinelCore_Report.pdf");
+    doc.save("Cloud_Security_Report.pdf");
 };
 
 export const exportThreatsExcel = (threats) => {
@@ -59,7 +59,7 @@ export const exportThreatsExcel = (threats) => {
         }
     );
 
-    saveAs(file, "SentinelCore_Report.xlsx");
+    saveAs(file, "Cloud_Security_Report.xlsx");
 
 };
 export const exportAnalyticsReport = (threats) => {
@@ -67,7 +67,7 @@ export const exportAnalyticsReport = (threats) => {
     const doc = new jsPDF();
 
     doc.setFontSize(22);
-    doc.text("SentinelCore Analytics Report", 14, 20);
+    doc.text("Cloud Security Analytics Report", 14, 20);
 
     doc.setFontSize(11);
     doc.text(
@@ -104,6 +104,6 @@ export const exportAnalyticsReport = (threats) => {
         ],
     });
 
-    doc.save("SentinelCore_Analytics_Report.pdf");
+    doc.save("Cloud_Security_Analytics_Report.pdf");
 
 };

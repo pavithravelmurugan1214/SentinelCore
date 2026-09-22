@@ -254,7 +254,7 @@ function PlaybookExecutionDetail() {
                     {/* Console Header */}
                     <div className="bg-slate-900 px-6 py-3 border-b border-slate-800 flex justify-between items-center text-xs font-mono text-slate-400">
                       <span className="flex items-center gap-2 text-sky-400 font-bold">
-                        <FaTerminal /> SENTINELCORE RESPONSE AGENT v1.0.0
+                        <FaTerminal /> CLOUD SECURITY RESPONSE AGENT v1.0.0
                       </span>
                       <span>Logs: {logs.length} entries</span>
                     </div>

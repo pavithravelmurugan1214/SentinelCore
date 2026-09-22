@@ -9,6 +9,7 @@ public class MyDbTest {
     public void testPostgresConnection() {
         String[] usernames = {"postgres", "akhi", "Akhi"};
         String[] passwords = {
+            "postgres123",
             "Akhi 140808",
             "akhi 140808",
             "Akhi140808",
@@ -50,6 +51,29 @@ public class MyDbTest {
                     }
                     if (!found) {
                         System.out.println("  - Table 'incidents' does NOT exist!");
+                    }
+                    rs.close();
+
+                    // Print rows in iocs table
+                    try {
+                        Statement stmt = conn.createStatement();
+                        ResultSet iocRs = stmt.executeQuery("SELECT id, type, value, risk_level, status FROM ioc");
+                        System.out.println("Rows in 'ioc' table:");
+                        while (iocRs.next()) {
+                            System.out.println("  - ID: " + iocRs.getLong("id") + ", Type: " + iocRs.getString("type") + ", Value: " + iocRs.getString("value") + ", Risk: " + iocRs.getString("risk_level") + ", Status: " + iocRs.getString("status"));
+                        }
+                        iocRs.close();
+
+                        // Print rows in alert_rules table
+                        ResultSet rulesRs = stmt.executeQuery("SELECT id, name, event_type, enabled FROM alert_rules");
+                        System.out.println("Rows in 'alert_rules' table:");
+                        while (rulesRs.next()) {
+                            System.out.println("  - ID: " + rulesRs.getLong("id") + ", Name: " + rulesRs.getString("name") + ", EventType: " + rulesRs.getString("event_type") + ", Enabled: " + rulesRs.getBoolean("enabled"));
+                        }
+                        rulesRs.close();
+                        stmt.close();
+                    } catch (Exception e) {
+                        System.out.println("Error querying tables: " + e.getMessage());
                     }
                     
                     conn.close();

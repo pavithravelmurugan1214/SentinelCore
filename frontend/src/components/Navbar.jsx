@@ -63,7 +63,7 @@ function Navbar() {
 
             {/* Logo */}
             <h1 className="text-2xl font-bold text-cyan-400">
-                {settings.organizationName || settings.platformName || "SentinelCore"}
+                {settings.organizationName || settings.platformName || "Cloud Security"}
             </h1>
 
             {/* Right Section */}

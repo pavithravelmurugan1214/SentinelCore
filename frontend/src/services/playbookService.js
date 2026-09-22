@@ -98,7 +98,7 @@ const playbookService = {
     return response.data;
   },
 
-  // Check if target is blocked by SentinelCore Playbook
+  // Check if target is blocked by Cloud Security Playbook
   getTargetStatus: async (ip = "192.168.1.105", username = "admin@acme.com") => {
     const response = await api.get(`/playbooks/target-status?ip=${encodeURIComponent(ip)}&username=${encodeURIComponent(username)}`);
     return response.data;
